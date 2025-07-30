@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
@@ -41,6 +42,8 @@
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "5.2.0",
     "happy-dom": "^18.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "neostandard": "0.12.2",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
