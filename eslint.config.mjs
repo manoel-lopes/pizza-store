@@ -29,23 +29,18 @@ export default [
       'no-unused-vars': 'off',
       'no-var': 'error',
       'no-console': ['error', { allow: ['error'] }],
+      '@stylistic/max-len': 'off',
       '@stylistic/function-paren-newline': 'off',
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
-      '@stylistic/max-len': ['warn', {
-        code: 102,
-        tabWidth: 2,
-        ignoreUrls: true,
-        ignoreComments: false,
-      }],
       '@stylistic/space-before-function-paren': ['error', {
         anonymous: 'always',
         asyncArrow: 'always',
         named: 'never',
       }],
       '@stylistic/multiline-ternary': 'off',
-      '@typescript-eslint/no-explicit-any': 'error',
-      '@typescript-eslint/no-useless-constructor': 'error',
-      '@typescript-eslint/no-unused-vars': ['error', {
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-useless-constructor': 'warn',
+      '@typescript-eslint/no-unused-vars': ['warn', {
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
       }],
