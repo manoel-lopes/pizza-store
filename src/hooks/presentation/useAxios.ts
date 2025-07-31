@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import type { HttpClient } from '@/core/infra/http/http-client'
 
 export function useAxios() {

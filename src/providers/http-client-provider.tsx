@@ -1,4 +1,5 @@
 import { createContext, useContext } from 'react'
+
 import type { HttpClient } from '@/core/infra/http/http-client'
 import { useAxios } from '@/hooks/presentation/useAxios'
 
