@@ -1,7 +1,7 @@
 import {
+  MutationCache,
   QueryClient,
   QueryClientProvider as ReactQueryClientProvider,
-  MutationCache,
 } from '@tanstack/react-query'
 
 type QueryClientProviderProps = {
