@@ -1,3 +1,4 @@
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { RouterProvider } from 'react-router-dom'
 
 import { HttpClientProvider } from './providers/http-client-provider'
@@ -8,7 +9,10 @@ export function App() {
   return (
     <HttpClientProvider>
       <QueryClientProvider>
-        <RouterProvider router={router} />
+        <HelmetProvider>
+          <Helmet titleTemplate='%s | pizza.store' />
+          <RouterProvider router={router} />
+        </HelmetProvider>
       </QueryClientProvider>
     </HttpClientProvider>
   )
