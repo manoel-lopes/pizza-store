@@ -5,7 +5,6 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 import tseslint from 'typescript-eslint'
-
 import eslint from '@eslint/js'
 import vitest from '@vitest/eslint-plugin'
 
@@ -36,9 +35,11 @@ export default [
             '^react$',
             'react',
             '^\\w',
+            '^@',
           ],
           [
             '^\\.',
+            '^@/',
             '\\.css$',
           ],
         ],
