@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async'
-import { Link } from 'react-router-dom'
 
-import { SignInForm } from './sign-in-form'
+import { NavLink } from '@/components/router/nav-link'
 import { Button } from '@/components/ui/button'
+import { SignInForm } from './sign-in-form'
 
 export function SignIn() {
   return (
@@ -13,7 +13,7 @@ export function SignIn() {
         variant='ghost'
         className='absolute top-8 right-8'
       >
-        <Link to='/sign-up'>Create an account</Link>
+        <NavLink to='/sign-up'>Create an account</NavLink>
       </Button>
       <div className='p-8'>
         <div className='w-[350px] flex flex-col justify-center gap-6'>
