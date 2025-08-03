@@ -1,14 +1,17 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { type SingInFormData, useSingInForm } from '@/hooks/presentation/forms/useSingInForm'
+import {
+  type SingInFormData,
+  useSingInForm,
+} from '@/hooks/presentation/forms/useSingInForm'
 import { useToast } from '@/hooks/presentation/useToast'
 
 export function SignInForm() {
   const { register, handleSubmit, formState: { isSubmitting } } = useSingInForm()
   const toast = useToast()
 
-  function handleSingIn(data: SingInFormData) {
+  async function handleSingIn(data: SingInFormData) {
     try {
       toast.success('We send an authentication link to your email.')
     } catch (error) {
