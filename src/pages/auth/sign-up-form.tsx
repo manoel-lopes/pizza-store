@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { type SignUpFormData, useSignUpForm } from '@/hooks/presentation/forms/useSignUpForm'
 import { useToast } from '@/hooks/presentation/useToast'
-import { maskPhoneNumber } from '@/util/mask'
+import { maskPhoneNumber } from '@/util/mask/phone'
 
 export function SignUpForm() {
   const { register, handleSubmit, formState: { isSubmitting }, watch } = useSignUpForm()
