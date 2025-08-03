@@ -23,7 +23,20 @@ export function SignUp() {
               Become a partner and start selling your pizzas
             </p>
           </div>
-          <SignUpForm />
+          <div className='flex flex-col gap-2'>
+            <SignUpForm />
+            <p className='px-6 text-center text-sm leading-relaxed text-muted-foreground'>
+              By clicking continue, you agree to our{' '}
+              <a className='underline underline-offset-4 text-nowrap'>
+                Terms of Service
+              </a>{' '}
+              and acknowledge that you have read our{' '}
+              <a className='underline underline-offset-4 text-nowrap'>
+                Privacy Policy
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
     </>
