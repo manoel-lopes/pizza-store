@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 import { NavLink } from '@/components/router/nav-link'
 import { Button } from '@/components/ui/button'
-import { SignUpForm } from './sign-up/components/sign-up-form'
+import { SignUpForm } from './components/sign-up-form'
 
 export function SignUp() {
   return (
