@@ -1,29 +1,29 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
-import { SignInForm } from './sign-in-form'
+import { SignUpForm } from './sign-up-form'
 import { Button } from '@/components/ui/button'
 
-export function SignIn() {
+export function SignUp() {
   return (
     <>
-      <Helmet title='signin' />
+      <Helmet title='signup' />
       <Button
         asChild
         variant='ghost'
         className='absolute top-8 right-8'
       >
-        <Link to='/sign-up'>Create an account</Link>
+        <Link to='/sign-in'>Sign in</Link>
       </Button>
       <div className='p-8'>
         <div className='w-[350px] flex flex-col justify-center gap-6'>
           <div className='flex flex-col gap-2 text-center'>
-            <h1 className='text-2xl font-semibold tracking-tight'>Sign in to your account</h1>
+            <h1 className='text-2xl font-semibold tracking-tight'>Create an account</h1>
             <p className='text-sm text-muted-foreground'>
-              Enter your email below to sign in to your account
+              Become a partner and start selling your pizzas
             </p>
           </div>
-          <SignInForm />
+          <SignUpForm />
         </div>
       </div>
     </>
