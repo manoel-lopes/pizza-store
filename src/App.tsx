@@ -4,7 +4,7 @@ import { Toaster } from 'sonner'
 
 import { HttpClientProvider } from './providers/http-client-provider'
 import { QueryClientProvider } from './providers/query-client-provider'
-import { router } from './routes/router'
+import { router } from './router'
 
 export function App() {
   return (
