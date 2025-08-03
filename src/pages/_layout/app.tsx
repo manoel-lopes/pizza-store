@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { RouteContent } from '@/components/router/route-content'
 
 export function AppLayout() {
   return (
@@ -7,7 +7,7 @@ export function AppLayout() {
         <h1>Header</h1>
       </div>
       <div>
-        <Outlet />
+        <RouteContent />
       </div>
     </div>
   )

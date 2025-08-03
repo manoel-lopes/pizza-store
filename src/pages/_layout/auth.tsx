@@ -1,6 +1,5 @@
-import { Outlet } from 'react-router-dom'
-
 import { Icons } from '@/components/icons'
+import { RouteContent } from '@/components/router/route-content'
 
 export function AuthLayout() {
   return (
@@ -15,7 +14,7 @@ export function AuthLayout() {
         </footer>
       </div>
       <div className='flex flex-col items-center justify-center relative'>
-        <Outlet />
+        <RouteContent />
       </div>
     </div>
   )
