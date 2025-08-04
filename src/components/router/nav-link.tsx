@@ -1,5 +1,9 @@
-import { NavLink as RouterNavLink, type NavLinkProps } from 'react-router-dom'
+import { Link, type LinkProps } from 'react-router-dom'
+
+type NavLinkProps = LinkProps & {
+  children: React.ReactNode
+}
 
 export const NavLink = (props: NavLinkProps) => {
-  return <RouterNavLink {...props} />
+  return <Link {...props} />
 }
