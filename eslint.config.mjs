@@ -70,6 +70,11 @@ export default [
         'warn',
         { blankLine: 'always', prev: 'import', next: '*' },
         { blankLine: 'any', prev: 'import', next: 'import' },
+        { blankLine: 'never', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+        { blankLine: 'always', prev: '*', next: 'function' },
+        { blankLine: 'always', prev: 'function', next: '*' },
+        { blankLine: 'never', prev: ['const', 'let', 'var'], next: 'return' },
+        { blankLine: 'always', prev: 'function', next: 'return' },
       ],
       '@typescript-eslint/no-unused-vars': ['warn', {
         argsIgnorePattern: '^_',
