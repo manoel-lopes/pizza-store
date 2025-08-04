@@ -15,6 +15,5 @@ export function useSignUpForm() {
   const form = useForm<SignUpFormData>({
     resolver: zodResolver(signUpSchema),
   })
-
   return form
 }

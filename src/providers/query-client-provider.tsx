@@ -16,7 +16,6 @@ export function QueryClientProvider({ children }: QueryClientProviderProps) {
       },
     }),
   })
-
   return (
     <ReactQueryClientProvider client={queryClient}>
       {children}

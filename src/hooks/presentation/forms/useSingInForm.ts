@@ -12,6 +12,5 @@ export function useSingInForm() {
   const form = useForm<SingInFormData>({
     resolver: zodResolver(singInSchema),
   })
-
   return form
 }
