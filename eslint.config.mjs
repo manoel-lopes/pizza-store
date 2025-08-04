@@ -43,7 +43,12 @@ export default [
           ],
           [
             '^\\.',
-            '^@/',
+            '^@/core/',
+            '^@/pages/',
+            '^@/components/',
+            '^@/hooks/',
+            '^@/utils/',
+            '^@/lib/',
             '^\\./',
             '\\.css$',
           ],
