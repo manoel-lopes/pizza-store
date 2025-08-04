@@ -24,6 +24,10 @@ export default [
     languageOptions: {
       globals: {
         React: true,
+        window: true,
+        document: true,
+        localStorage: true,
+        sessionStorage: true,
         ...vitest.environments?.env?.globals,
       },
     },
