@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom'
+
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { type SignUpFormData, useSignUpForm } from '@/hooks/presentation/forms/useSignUpForm'
@@ -7,10 +9,16 @@ import { maskPhoneNumber } from '@/util/mask/phone'
 export function SignUpForm() {
   const { register, handleSubmit, formState: { isSubmitting }, watch } = useSignUpForm()
   const toast = useToast()
+  const navigate = useNavigate()
 
   function handleSignUp(data: SignUpFormData) {
     try {
-      toast.success('Account created successfully.')
+      toast.success('Account created successfully.', {
+        action: {
+          label: 'Sign in',
+          onClick: () => navigate('/sign-in'),
+        },
+      })
     } catch (error) {
       toast.error('Failed to create account.')
       console.error(error)
