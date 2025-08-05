@@ -2,6 +2,7 @@ import type { Order } from '@/core/domain/oder'
 import { Icons } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { TableCell, TableRow } from '@/components/ui/table'
+import { calculateTimeInMinutes } from '@/util/date/calculate-time-in-minutes'
 import { OrderStatusBadge } from './order-status-badge'
 
 type OrdersTableRowProps = {
@@ -9,10 +10,6 @@ type OrdersTableRowProps = {
 }
 
 export function OrdersTableRow({ order }: OrdersTableRowProps) {
-  const orderMade = new Date(order.createdAt)
-  const now = new Date()
-  const diffTime = Math.abs(now.getTime() - orderMade.getTime())
-  const diffMinutes = Math.floor(diffTime / (1000 * 60))
   return (
     <TableRow key={order.id}>
       <TableCell>
@@ -22,7 +19,9 @@ export function OrdersTableRow({ order }: OrdersTableRowProps) {
         </Button>
       </TableCell>
       <TableCell className='font-mono text-sm font-medium'>{order.id}</TableCell>
-      <TableCell className='text-muted-foreground'>{diffMinutes} min ago</TableCell>
+      <TableCell className='text-muted-foreground'>
+        {calculateTimeInMinutes(order.createdAt)} min ago
+      </TableCell>
       <TableCell>
         <OrderStatusBadge status={order.status} />
       </TableCell>
