@@ -7,7 +7,7 @@ type HttpClientProviderProps = {
   children: React.ReactNode
 }
 
-type UseHttpClientResult = {
+export type UseHttpClientResult = {
   api: HttpClient
 }
 
