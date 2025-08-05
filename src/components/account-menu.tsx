@@ -31,7 +31,7 @@ export function AccountMenu() {
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <Icons.Building className='h-4 w-4 mr-2' />
-          <span>Store profile</span>
+          <span>Profile</span>
         </DropdownMenuItem>
         <DropdownMenuItem className='text-rose-500 dark:text-rose-400'>
           <Icons.LogOut className='h-4 w-4 mr-2' />
