@@ -11,7 +11,7 @@ export function SignUpForm() {
   const toast = useToast()
   const navigate = useNavigate()
 
-  function handleSignUp(data: SignUpFormData) {
+  function handleSignUp(_data: SignUpFormData) {
     try {
       toast.success('Account created successfully.', {
         action: {

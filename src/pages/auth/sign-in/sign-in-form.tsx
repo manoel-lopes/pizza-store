@@ -11,7 +11,7 @@ export function SignInForm() {
   const { register, handleSubmit, formState: { isSubmitting } } = useSingInForm()
   const toast = useToast()
 
-  async function handleSingIn(data: SingInFormData) {
+  async function handleSingIn(_data: SingInFormData) {
     try {
       toast.success('We send an authentication link to your email.')
     } catch (error) {
