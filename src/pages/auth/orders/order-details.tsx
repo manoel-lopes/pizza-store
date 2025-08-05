@@ -1,4 +1,4 @@
-import type { Order } from '@/core/domain/oder'
+import type { Order } from '@/core/domain/order'
 import {
   DialogContent,
   DialogDescription,
