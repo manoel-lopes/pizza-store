@@ -1,5 +1,3 @@
-import { useTheme } from '@/providers/theme-provider'
-
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -7,6 +5,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { useTheme } from '@/providers/theme-provider'
 import { Icons } from './icons'
 
 export function ThemeToggle() {
