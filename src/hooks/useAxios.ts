@@ -1,9 +1,10 @@
 import axios from 'axios'
 
 import type { HttpClient } from '@/core/infra/http/http-client'
+import type { UseHttpClientResult } from '@/providers/http-client-provider'
 import { env } from '@/lib/env'
 
-export function useAxios() {
+export function useAxios(): UseHttpClientResult {
   const axiosInstance = axios.create({
     baseURL: env.API_URL,
   })
