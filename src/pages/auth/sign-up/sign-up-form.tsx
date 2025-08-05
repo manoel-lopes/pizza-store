@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom'
-import { maskPhoneNumber } from '@/util/mask/phone'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { type SignUpFormData, useSignUpForm } from '@/hooks/presentation/forms/useSignUpForm'
 import { useToast } from '@/hooks/presentation/useToast'
+import { maskPhoneNumber } from '@/util/mask/phone'
 
 export function SignUpForm() {
   const { register, handleSubmit, formState: { isSubmitting }, watch } = useSignUpForm()
