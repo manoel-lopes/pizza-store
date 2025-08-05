@@ -3,7 +3,9 @@ import axios from 'axios'
 import type { HttpClient } from '@/core/infra/http/http-client'
 
 export function useAxios() {
-  const axiosInstance = axios.create()
+  const axiosInstance = axios.create({
+    baseURL: import.meta.env.API_URL,
+  })
   const api = {} as HttpClient
 
   api.get = async <T>(url: string, params?: string): Promise<T> => {
