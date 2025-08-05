@@ -7,8 +7,10 @@ type OrderStatusBadgeProps = {
 export function OrderStatusBadge({ status }: OrderStatusBadgeProps) {
   const statusColor: Record<OrderStatus, string> = {
     pending: 'bg-yellow-500',
-    approved: 'bg-green-500',
+    delivered: 'bg-green-500',
     cancelled: 'bg-red-500',
+    processing: 'bg-blue-500',
+    delivering: 'bg-purple-500',
   }
   const formattedStatus = status.charAt(0).toUpperCase() + status.slice(1)
   return (
