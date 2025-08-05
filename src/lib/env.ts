@@ -6,7 +6,7 @@ type EnvParseError = [string, EnvErrorDetails]
 
 const _env = z
   .object({
-    NODE_ENV: z.enum(['development', 'production', 'test']),
+    NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
     API_URL: z.url().optional(),
   })
   .safeParse(import.meta.env)
