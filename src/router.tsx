@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { AppLayout } from './pages/_layouts/app'
 import { AuthLayout } from './pages/_layouts/auth'
 import { Home } from './pages/app/home'
-import { Orders } from './pages/auth/orders/orders'
+import { Orders } from './pages/app/orders/orders'
 import { SignIn } from './pages/auth/sign-in/sign-in'
 import { SignUp } from './pages/auth/sign-up/sign-up'
 
